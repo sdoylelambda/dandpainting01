@@ -143,6 +143,40 @@ $size-header-pad: 4em;
 		}
 	}
 
+	.accordion {
+
+		.panel {
+		  padding: 30px;
+		  border: 1px solid gray;
+	  
+		  .panel-bar {
+			display: flex;
+			justify-content: space-between;
+	  
+			.panel-buttons {
+	  
+			  button {
+				cursor: pointer;
+			  }
+	  
+			  .hide-btn {
+				display: none;
+			  }
+			}
+		  }
+	  
+		  .panel-content {
+			display: none;
+		  }
+	  
+		  .toggle-on {
+			display: block;
+		  }
+		}
+	  }
+	  
+	  
+
 	strong, b {
 		color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
